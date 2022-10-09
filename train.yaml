@@ -1,0 +1,6 @@
+path: ../photos
+train: [train/images]
+val: [test/images]
+test: [test/images]
+nc: 2
+names: [ 'Engaged', 'Distracted' ]
