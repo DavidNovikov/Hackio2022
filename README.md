@@ -44,6 +44,10 @@ Here we use a yolov5 model to automatically generate bounding boxes and labels f
 
 Yaml file for training our model.
 
+### best.pt
+
+Our model which we trained and used for inference.
+
 ## Details of Implementation
 
 ### Data generation
@@ -51,7 +55,18 @@ Yaml file for training our model.
 We sat in a parking lot a generated approximatly 1 hour of videos. We had 4 'drivers', each driver recorded ~7.5 minutes of engaged and distracted driving.
 Since we know that in our dataset the driver is always present we can use yolov5 to detect the driver. 
 If in any frame no driver is detected, then we can throw that frame out, since no bounding box can be reliably generated. 
-We sample every 8th frame of the videos to generate our dataset. Overall we generate and automatically annotate 13,037 frames. 
+We sample every 8th frame of the videos to generate our dataset. Overall we generate and automatically annotate 13,037 frames.
+
+### Model training
+
+We trained our model using the following colab script. Our hyper parameters were as follows:
+
+```
+--img 640 --batch 16 --epochs 10 --data {dataset.location}/data.yaml --weights yolov5s.pt --cache
+```
+
+We only train for 10 epochs because we start to overfit after that and we had time constraints with getting a rough model so that we can start prototyping
+https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb#scrollTo=lXMzd43k-lpJ
 
 ### Arduino
 Here is an image of the curcuit/breadboard and arduino which we use to alarm the driver if they are distracted.
