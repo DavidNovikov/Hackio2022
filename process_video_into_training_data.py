@@ -225,10 +225,4 @@ def createYaml(yamlFile):
     f.close()
 
 if __name__ == "__main__":
-    # makeVideosIntoFrames('photos/existingdatasets/npsdata/videos', 
-    #                       'photos/existingdatasets/npsdata/labels', 
-    #                       'photos/existingdatasets/imagesnps', 
-    #                       'photos/existingdatasets/labelsnps')
     buildTrainingDataAndFiles()
-    # checkSizes('photos/existingdatasets/epfldata/labels')
-    # validate()
