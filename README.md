@@ -55,5 +55,5 @@ We sample every 8th frame of the videos to generate our dataset. Overall we gene
 
 ### Arduino
 Here is an image of the curcuit/breadboard and arduino which we use to alarm the driver if they are distracted.
-<img width="700" alt="Screen Shot 2022-10-11 at 3 02 27 PM" src="https://user-images.githubusercontent.com/57300285/195177059-b35a4aa6-c525-4f22-b222-240aedf52fa7.png">
+<img width="350" alt="Screen Shot 2022-10-11 at 3 02 27 PM" src="https://user-images.githubusercontent.com/57300285/195177059-b35a4aa6-c525-4f22-b222-240aedf52fa7.png">
 
