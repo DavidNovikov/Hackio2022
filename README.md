@@ -40,7 +40,7 @@ This is a toy example used to verify that the methods used in process_video_into
 
 Here we use a yolov5 model to automatically generate bounding boxes and labels for our drivers.
 
-### 'train.yaml'
+### train.yaml
 
 Yaml file for training our model.
 
@@ -51,7 +51,7 @@ Yaml file for training our model.
 We sat in a parking lot a generated approximatly 1 hour of videos. We had 4 'drivers', each driver recorded ~7.5 minutes of engaged and distracted driving.
 Since we know that in our dataset the driver is always present we can use yolov5 to detect the driver. 
 If in any frame no driver is detected, then we can throw that frame out, since no bounding box can be reliably generated. 
-We sample every 8th frame of the original 
+We sample every 8th frame of the videos to generate our dataset. Overall we generate and automatically annotate 13,037 frames. 
 
 ### Arduino
 Here is an image of the curcuit/breadboard and arduino which we use to alarm the driver if they are distracted.
