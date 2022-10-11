@@ -2,7 +2,7 @@
 
 ## Welcome to our HackOhio project: De-Distracted Driving!!
 
-We won 1st overall and 2nd in the Honda challenge. Huge thank you to all the dedicated work done by the HackOhio team for putting on the event, and to Honda for being a dedicated sponsor.
+We placed 1st overall and 2nd in the Honda challenge. Huge thank you to all the dedicated work done by the HackOhio team for putting on the event, and to Honda for being a dedicated sponsor.
 
 <img
   src="https://user-images.githubusercontent.com/57300285/195107289-e1a78b87-c128-477b-9bc6-05a1c79be7fd.jpg"
